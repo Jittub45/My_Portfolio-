@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #08101f;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08101f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9b43fb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a35c9;
+}
+
+/* Selection color */
+::selection {
+  background: #9b43fb;
+  color: white;
+}
+
+@layer components {
+  .karate-btn {
+    @apply rounded-full py-3 px-8 font-semibold transition-all duration-300;
+  }
+
+  .karate-btn-primary {
+    @apply karate-btn bg-karate-purple text-white hover:bg-opacity-80;
+  }
+
+  .karate-btn-outline {
+    @apply karate-btn border-2 border-karate-purple text-white hover:bg-karate-purple hover:bg-opacity-10;
+  }
+}
