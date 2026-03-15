@@ -53,7 +53,7 @@ const FighterVoting = () => {
               {/* Phone Frame */}
               <div className="relative w-full h-full aspect-[/26] overflow-hidden rounded-[24px] border-4 border-karate-blue shadow-2xl flex items-center justify-center">
                 <motion.img 
-                  src={portpic}
+                  src={portpic.src}
                   alt="Jitendra Kumar"
                   className="w-full h-auto max-w-lg mx-auto rounded-lg shadow-xl cursor-pointer hover:opacity-90 transition-opacity"
                   onClick={() => setIsModalOpen(true)}
@@ -86,7 +86,7 @@ const FighterVoting = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={portpic} 
+                src={portpic.src} 
                 alt="Jitendra Kumar - Full Resume" 
                 className="w-full h-full object-contain rounded-lg shadow-2xl"
               />

@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-karate-purple/20 rounded-full blur-3xl"></div>
               <img 
-                src={portpic}
+                src={portpic.src}
                 alt="Jitendra Kumar"
                 className="relative z-10 w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-karate-purple/30"
               />
